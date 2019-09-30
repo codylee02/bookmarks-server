@@ -57,7 +57,7 @@ bookmarksRouter
   .get((req, res) => {
     const { id } = req.params;
 
-    const bookmark = bookmarks.find(bookmark => (bookmark.id == id));
+    const bookmark = bookmarks.find(bookmark => bookmark.id == id);
 
     //if we don't find a bookmark
     if (!bookmark) {
